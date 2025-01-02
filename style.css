@@ -1,0 +1,248 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #121212;  /* Dark Background for Body */
+    color: #f4f4f9;  /* Light Text Color for contrast */
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #5c67f2, #8e54e9);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+/* Container Flexbox for Alignment */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;  /* Space between logo and text */
+}
+
+/* Small Logo Styling */
+.logo-small {
+    background: url('logo.png') no-repeat center;
+    background-size: contain;
+    width: 990px;  /* Smaller logo size */
+    height: 60px;
+}
+
+/* Header Text Styling */
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Subtext Below */
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+/* Section Styling */
+section {
+    padding: 4rem 1rem;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    background: #1d1d1d;  /* Dark Background for About */
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Section */
+.services .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #2a2a2a;  /* Dark Card Background */
+    margin: 1rem;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background: #1d1d1d;  /* Dark Footer Background */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Chatbot Button */
+.chatbot-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #5c67f2;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Popup */
+.chat-popup {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 360px;
+    height: 500px;
+    display: none;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.chat-popup iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Trending Section */
+.trending {
+    background-color: #1d1d1d;  /* Dark Background for Trending */
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.trending h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #f4f4f9;  /* Light Text for Heading */
+}
+
+.trending-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.trend-card {
+    background: #2a2a2a;  /* Dark Card Background for Trends */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.trend-card:hover {
+    transform: translateY(-10px);
+}
+
+.trend-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trend-card h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #5c67f2;  /* Light Blue Title */
+}
+
+.trend-card p {
+    font-size: 1rem;
+    padding: 0 1rem 2rem;
+    color: #f4f4f9;  /* Light Text for Description */
+}
+/* Calculator Button Style */
+.calculator-btn {
+    position: fixed;
+    bottom: 30px;
+up:10px;
+    left: 10px; /* Left-aligned instead of right */
+    background-color: #5c67f2; /* Blue color for the button */
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+/* Hover effect for the calculator button */
+.calculator-btn:hover {
+    background-color: #4b55d0; /* Darker blue for hover effect */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Calculator button active effect */
+.calculator-btn:active {
+    background-color: #3a47a1; /* Even darker blue when clicked */
+    transform: translateY(2px); /* Slight push effect */
+}
+
+/* Mobile responsive for the calculator button */
+@media screen and (max-width: 600px) {
+    .calculator-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}}
+/* Footer Styling */
+footer {
+    background: #333;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Footer Content for Icons */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Social Media Icon Styling */
+.social-icon {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-icon-img {
+    width: 40px;  /* Size of the icon */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.social-icon-img:hover {
+    transform: scale(1.1);  /* Slightly enlarge the icon on hover */
+}

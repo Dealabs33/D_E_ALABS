@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Us</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">
+        <h3>🗨️ InnovateX Bot</h3>
+        <a href="index.html">← Back to Home</a>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <div class="bot-message">Hi! 👋 How can I assist you today?</div>
+    </div>
+
+    <div class="chat-footer">
+        <input type="text" id="userInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <!-- Password Prompt (Initially Hidden) -->
+    <div id="password-prompt" style="display: none;">
+        <input type="password" id="password-input" placeholder="Enter password" />
+        <button onclick="validatePassword()">Submit</button>
+    </div>
+
+    <!-- Placeholder for key display and copy -->
+    <div id="key-display" style="display: none;">
+        <p>Your key: <span id="key">jdjdjxisisjsjj4ieieusjz8</span></p>
+        <button onclick="copyToClipboard()">Copy Key</button>
+    </div>
+</div>
+<audio id="pingSound" src="ping.mp3"></audio>
+
+
+<script src="chatbot.js"></script>
+<script src="chatbrain.js"></script>
+
+</body>
+</html>
